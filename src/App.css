@@ -4,8 +4,12 @@
   background-size: 100%;
 }
 
-span:hover {
+span {
   transition: 200ms;
+  font-size: 2rem;
+}
+
+span:hover {
   color: rgb(255, 56, 56);
   font-size: 2.6rem;
 }

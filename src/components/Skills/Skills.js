@@ -12,6 +12,9 @@ const Skills = () => {
       >
         <div className="skillsTitlePicture">
           <h1>
+            <span>M</span>
+            <span>y</span>
+            <span>&nbsp;</span>
             <span>S</span>
             <span>k</span>
             <span>i</span>
