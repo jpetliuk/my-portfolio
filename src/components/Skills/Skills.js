@@ -1,10 +1,15 @@
 import "./Skills.css";
-import temporary from "./../../logo.svg";
+import temporary from "../../logo.svg";
 
 const Skills = () => {
   return (
     <div className="skillsShadow">
-      <div id="skillsContainer">
+      <div
+        id="skillsContainer"
+        style={{
+          backgroundImage: `url("/backgrounds/skillsBackground6.svg")`,
+        }}
+      >
         <div className="skillsTitlePicture">
           <h1>
             <span>S</span>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="593.13379mm"
+   height="262.62149mm"
+   viewBox="0 0 593.13381 262.62149"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (8a69933317, 2022-10-28, custom)"
+   sodipodi:docname="skillsBackground2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.38299633"
+     inkscape:cx="1245.4427"
+     inkscape:cy="391.64866"
+     inkscape:window-width="1600"
+     inkscape:window-height="863"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="301.74285"
+       y="201.88264"
+       width="1269.7576"
+       height="512.79456"
+       id="rect308" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter14832"
+       x="-0.020013882"
+       y="-0.060816821"
+       width="1.0400278"
+       height="1.1216336">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.3241981"
+         id="feGaussianBlur14834" />
+    </filter>
+    <rect
+       x="301.74286"
+       y="201.88264"
+       width="1269.7576"
+       height="512.79456"
+       id="rect308-2" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter19823"
+       x="-0.1198014"
+       y="-0.12326201"
+       width="1.2396027"
+       height="1.2465236">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="3.664378"
+         id="feGaussianBlur19825" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(94.863835)">
+    <rect
+       style="fill:#e6e6ea;stroke:#ff0000;stroke-width:0.00000001;stroke-dasharray:none;fill-opacity:1"
+       id="rect5762"
+       width="591.55914"
+       height="261.98715"
+       x="-93.34185"
+       y="-0.20508312" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.53141975,0,0,0.57712608,-106.14311,-40.672133)"
+       id="text306"
+       style="font-size:133.333px;font-family:sans-serif;-inkscape-font-specification:sans-serif;white-space:pre;shape-inside:url(#rect308);display:inline;mix-blend-mode:normal;fill:#000000;fill-opacity:0.0513536;stroke:#000000;stroke-width:4.94764;stroke-dasharray:none;stroke-opacity:0.05;filter:url(#filter14832)"
+       inkscape:transform-center-x="3.5998447"
+       inkscape:transform-center-y="-0.66384061"><tspan
+         x="301.74219"
+         y="325.21583"
+         id="tspan19859"><tspan
+           style="font-family:FreeSerif;-inkscape-font-specification:'FreeSerif, Normal';stroke-linejoin:round"
+           id="tspan19857">Skills
+</tspan></tspan></text>
+    <path
+       sodipodi:type="star"
+       style="fill:#f1f1f1;fill-opacity:1;stroke:#000000;stroke-width:2.2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.153589;filter:url(#filter19823)"
+       id="path18207"
+       inkscape:flatsided="false"
+       sodipodi:sides="5"
+       sodipodi:cx="2031.0757"
+       sodipodi:cy="328.39331"
+       sodipodi:r1="43.518997"
+       sodipodi:r2="21.759501"
+       sodipodi:arg1="2.7599983"
+       sodipodi:arg2="3.3883168"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 1990.6869,344.59981 19.2882,-21.52079 -6.7935,-28.08962 26.4278,11.69387 24.6155,-15.14122 -2.9548,28.74801 22.0067,18.73184 -28.2541,6.07337 -11.0145,26.71812 -14.5071,-24.99445 z"
+       transform="matrix(0.26458333,0,0,0.26458333,-89.64487,-46.028895)"
+       inkscape:transform-center-x="-0.23975537"
+       inkscape:transform-center-y="0.86900003" />
+  </g>
+</svg>

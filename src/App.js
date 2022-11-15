@@ -5,7 +5,12 @@ import Projects from "./components/Projects/Projects";
 
 function App() {
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{
+        backgroundImage: `url("/backgrounds/pageBackground.svg")`,
+      }}
+    >
       <Banner />
       <Skills />
       <Projects />

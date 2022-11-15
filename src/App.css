@@ -1,6 +1,7 @@
 .App {
   max-width: 100%;
   text-align: center;
+  background-size: 100%;
 }
 
 span:hover {
