@@ -1,0 +1,25 @@
+#bannerContainer {
+  display: flex;
+  height: 114vh;
+  background: linear-gradient(200deg, rgb(18, 1, 103), rgb(128, 15, 156));
+  color: white;
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 94%); */
+}
+
+.bannerShadow {
+  /* background-color: rgb(255, 255, 232); */
+}
+
+.bannerContent {
+  background-color: rgb(255, 174, 127);
+  margin: 33vh auto auto 10vw;
+  text-align: left;
+}
+
+.bannerContent img {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  margin-right: 10px;
+  cursor: pointer;
+}
