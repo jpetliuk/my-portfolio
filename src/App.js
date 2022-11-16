@@ -2,6 +2,9 @@ import "./App.css";
 import Banner from "./components/Banner/Banner";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
+import Footer from "./components/Footer/Footer";
+import Contact from "./components/Contact/Contact";
+import ContactImages from "./components/ContactImages/ContactImages";
 
 function App() {
   return (
@@ -14,6 +17,8 @@ function App() {
       <Banner />
       <Skills />
       <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
 }
