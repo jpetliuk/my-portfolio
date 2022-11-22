@@ -1,0 +1,38 @@
+.custom-shape-divider-top-1668698050 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0.1;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1668698050 svg {
+  position: relative;
+  display: block;
+  width: calc(200%);
+  height: 200px;
+  transform: rotateY(180deg);
+  /* animation: testing 5s infinite; */
+}
+
+.custom-shape-divider-top-1668698050 .shape-fill {
+  fill: #ffffff6e;
+}
+
+@keyframes testing {
+  from {
+    width: calc(300%);
+    height: 50px;
+  }
+  50% {
+    width: calc(100%);
+    height: 200px;
+    transform: rotateY(180deg);
+  }
+  to {
+    width: calc(300%);
+    /* height: 50px; */
+  }
+}

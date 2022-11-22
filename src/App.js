@@ -4,7 +4,8 @@ import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
-import ContactImages from "./components/ContactImages/ContactImages";
+import Experimets from "./components/Experiments/Experimets";
+import Testing from "./components/testing";
 
 function App() {
   return (
@@ -15,10 +16,12 @@ function App() {
       }}
     >
       <Banner />
-      <Skills />
+      {/* <Skills /> */}
       <Projects />
+      <Experimets />
       <Contact />
       <Footer />
+      <Testing />
     </div>
   );
 }

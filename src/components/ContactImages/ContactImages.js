@@ -31,9 +31,23 @@ const ContactImages = () => {
     }, 9000);
   }, [count]);
 
+  const [reset, setReset] = useState(false);
+
+  const resetAnimation = () => {
+    setReset(true);
+    setTimeout(() => {
+      setReset(false);
+    }, 2500);
+  };
+
   return (
     <div className="contactAnimationMoving">
-      <img src={allImages[count]} alt="moving pictures" />
+      <img
+        onClick={reset === false ? resetAnimation : null}
+        className={reset === false ? null : "rotate"}
+        src={allImages[count]}
+        alt="moving pictures"
+      />
     </div>
   );
 };

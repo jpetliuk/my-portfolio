@@ -17,7 +17,9 @@ const Projects = () => {
               franchaise, we did it as a Single Page Application, so that
               people…..
             </p>
-            <button>View Project</button>
+            <div className="projectDescriptionButton">
+              <button>View Project</button>
+            </div>
           </div>
           <div className="projectsSnippet targetGym"></div>
         </div>
@@ -33,7 +35,9 @@ const Projects = () => {
               franchaise, we did it as a Single Page Application, so that
               people…..
             </p>
-            <button>View Project</button>
+            <div className="projectDescriptionButton">
+              <button>View Project</button>
+            </div>
           </div>
           <div className="projectsSnippet klapTools"></div>
         </div>

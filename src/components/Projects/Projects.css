@@ -1,7 +1,7 @@
 #projectsContainer {
-  height: 300vh;
   /* background-color: rgb(241, 255, 255); */
   justify-content: center;
+  padding-bottom: 200px;
 }
 
 .projectsProjectsContainer {
@@ -34,6 +34,30 @@
   -webkit-text-stroke: 1px rgba(201, 200, 200, 0.407);
 }
 
+.projectDescriptionButton {
+  width: fit-content;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.projectDescriptionButton button {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 113, 91);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  transition: 400ms;
+  cursor: pointer;
+}
+
+.projectDescriptionButton button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+}
+
 .projectTool {
   margin: 15px 0 35px;
   color: white;
@@ -42,11 +66,6 @@
   border-radius: 5px;
   width: min-content;
   cursor: pointer;
-}
-
-.projectTool:hover {
-  transition: 300ms;
-  transform: scale(1.02);
 }
 
 .projectTool p {

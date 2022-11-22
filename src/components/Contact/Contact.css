@@ -1,9 +1,11 @@
 #contactContainer {
   background-color: white;
+  padding: 30px 0 40px 0;
 }
 
 #contactContainer h1 {
   font-size: 3rem;
+  margin: 0 auto 40px auto;
 }
 
 .contactInformationContainer {
@@ -28,4 +30,41 @@
 .contanctAnimation img {
   width: 125px;
   height: 125px;
+}
+
+.contactInformation p {
+  text-decoration: none;
+  color: rgb(255, 113, 91);
+  font-weight: bold;
+  margin-bottom: 50px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.contactInformationButton {
+  border: solid 2px black;
+  width: fit-content;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.contactInformationButton button {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 113, 91);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  transition: 400ms;
+  translate: -15px -10px;
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.contactInformationButton button:hover {
+  transform: scale(1);
+  translate: 0;
+  box-shadow: none;
 }

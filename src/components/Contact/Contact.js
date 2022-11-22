@@ -8,8 +8,12 @@ const Contact = () => {
       <h1>Let's have a chat</h1>
       <div className="contactInformationContainer">
         <div className="contactInformation">
-          <p>jeremias.petliuk@gmial.com</p>
-          <button>get in touch</button>
+          <a href="mailto: jeremias.petliuk@gmail.com">
+            <p>jeremias.petliuk@gmail.com</p>
+          </a>
+          <div className="contactInformationButton">
+            <button>get in touch</button>
+          </div>
         </div>
         <div className="contanctAnimation">
           <ContactImages />

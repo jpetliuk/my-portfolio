@@ -5,7 +5,9 @@
   padding: 80px 0 160px 0;
   margin-top: -20vh;
   background-size: cover;
-  background-position: center center;
+  background-position: 100% center;
+  background-color: #57886c;
+  /* color: #e5e7e6; */
 }
 
 .skillsShadow {
@@ -25,11 +27,10 @@
 }
 
 .skillsTitlePicture img {
-  width: 220px;
-  height: 300px;
+  width: 200px;
   background-color: brown;
   border-radius: 10px;
-  border: solid 2px black;
+  border: solid 2px rgb(44, 0, 72);
 }
 
 .skillsListDescription {
@@ -42,7 +43,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   margin-left: -20px;
 }
 
@@ -51,9 +52,16 @@
   font-weight: 600;
 }
 
-.skillsList div img {
-  width: 50px;
-  height: 50px;
+.skillsList .skillsIcon {
+  color: black;
+  transition: 200ms;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.skillsList .skillsIcon:hover {
+  color: rgb(255, 113, 91);
 }
 
 .skillsDescription {
