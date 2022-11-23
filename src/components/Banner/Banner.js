@@ -5,7 +5,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { useEffect, useState } from "react";
 
-const Banner = () => {
+const Banner = ({ aboutHandler }) => {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -66,6 +66,28 @@ const Banner = () => {
       >
         <div></div>
       </div>
+      <div className="bannerMediaLinks">
+        <a
+          target={"_blank"}
+          rel="noreferrer"
+          href="https://github.com/jpetliuk"
+        >
+          <p>github</p>
+          <FontAwesomeIcon className="bannerIcon" icon={faGithub} />
+        </a>
+        <a
+          target={"_blank"}
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/jeremias-petliuk/"
+        >
+          <p>linkedin</p>
+          <FontAwesomeIcon className="bannerIcon" icon={faLinkedin} />
+        </a>
+        <a href="mailto: jeremias.petliuk@gmail.com">
+          <p>mail</p>
+          <FontAwesomeIcon className="bannerIcon" icon={faEnvelope} />
+        </a>
+      </div>
       <div id="bannerContainer">
         <div className="bannerContent">
           <div className="bannerTitle">
@@ -108,26 +130,10 @@ const Banner = () => {
               <span>r</span>
             </h1>
           </div>
-          <div className="bannerMediaLinks">
-            <a
-              target={"_blank"}
-              rel="noreferrer"
-              href="https://github.com/jpetliuk"
-            >
-              <FontAwesomeIcon className="bannerIcon" icon={faGithub} />
-            </a>
-            <a
-              target={"_blank"}
-              rel="noreferrer"
-              href="https://www.linkedin.com/in/jeremias-petliuk/"
-            >
-              <FontAwesomeIcon className="bannerIcon" icon={faLinkedin} />
-            </a>
-            <a href="mailto: jeremias.petliuk@gmail.com">
-              <FontAwesomeIcon className="bannerIcon" icon={faEnvelope} />
-            </a>
-          </div>
           <p>place holder text for description about myselft.</p>
+          <div className="bannerAbout">
+            <button onClick={aboutHandler}>About Me</button>
+          </div>
         </div>
       </div>
     </div>

@@ -1,8 +1,4 @@
-import "./Skills.css";
-// import myPhoto from "../../assets/img/myPhoto.png";
-// import playaFront from "../../assets/img/playaFront.jpg";
-// import playaBack from "../../assets/img/playaBack.jpg";
-
+import "./About.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDatabase,
@@ -20,31 +16,42 @@ import {
   faWordpress,
   faGit,
 } from "@fortawesome/free-brands-svg-icons";
+import { useState, useEffect } from "react";
 
-const Skills = () => {
+const About = ({ aboutHandler }) => {
+  useEffect(() => {
+    return document.body.classList.add("noScroll");
+  }, []);
+
+  const [out, setOut] = useState(true);
+
+  const outAnimation = () => {
+    setOut(false);
+    document.body.classList.remove("noScroll");
+    setTimeout(() => {
+      aboutHandler();
+    }, 500);
+  };
+
   return (
-    <div className="skillsShadow">
-      <div
-        id="skillsContainer"
-        style={{
-          backgroundImage: `url("/backgrounds/skillsBackground6.svg")`,
-        }}
-      >
-        <div className="skillsTitlePicture">
-          <h1>
-            <span>M</span>
-            <span>y</span>
-            <span>&nbsp;</span>
-            <span>S</span>
-            <span>k</span>
-            <span>i</span>
-            <span>l</span>
-            <span>l</span>
-            <span>s</span>
-          </h1>
-          {/* <img src={playaFront} /> */}
-        </div>
-        <div className="skillsListDescription">
+    <div
+      className={
+        out ? "aboutContainerWraper" : "aboutContainerWraper backgroundOut"
+      }
+    >
+      <div className="aboutContainer">
+        <div className={out ? "aboutInfo" : "aboutInfo outInfoAnimation"}>
+          <div>
+            <h1>About me.</h1>
+            <p>Frontend Developer.</p>
+            <p>
+              Hello I'm Jeremias Petliuk, a 22-year-old Frontend developer born
+              in Argentina.
+              <br />I love to learn new technologies and building all kinds of
+              things, resolve problems, create smart user interface and image
+              useful interaction.
+            </p>
+          </div>
           <div className="skillsList">
             <div>
               <FontAwesomeIcon className="skillsIcon" icon={faJs} />
@@ -56,7 +63,6 @@ const Skills = () => {
             </div>
             <div>
               <FontAwesomeIcon className="skillsIcon" icon={faCss3Alt} />
-
               <p>CSS</p>
             </div>
             <div>
@@ -66,37 +72,30 @@ const Skills = () => {
             </div>
             <div>
               <FontAwesomeIcon className="skillsIcon" icon={faSass} />
-
               <p>SASS</p>
             </div>
             <div>
               <FontAwesomeIcon className="skillsIcon" icon={faNodeJs} />
-
               <p>Node.js</p>
             </div>
             <div>
               <FontAwesomeIcon className="skillsIcon" icon={faDatabase} />
-
               <p>MongoDB</p>
             </div>
             <div>
               <FontAwesomeIcon className="skillsIcon" icon={faBootstrap} />
-
               <p>Bootstrap</p>
             </div>
             <div>
               <FontAwesomeIcon className="skillsIcon" icon={faWordpress} />
-
               <p>Wordpress</p>
             </div>
             <div>
               <FontAwesomeIcon className="skillsIcon" icon={faGit} />
-
               <p>Git</p>
             </div>
             <div>
               <FontAwesomeIcon className="skillsIcon" icon={faDatabase} />
-
               <p>Firebase</p>
             </div>
             <div>
@@ -108,20 +107,13 @@ const Skills = () => {
               <p>RESTful APIs</p>
             </div>
           </div>
-          <div className="skillsDescription">
-            <h2>I love building stuff 📱</h2>
-            <p>
-              I started playing with computers when I was 11 years-old. Since
-              then I have been tinkering with all sorts of technologies that in
-              some way or another led me to work on music, photography, sound
-              engineering, electric engineering, automation, video production,
-              feature film post-production, VR games, and 3D sound.
-            </p>
-          </div>
+        </div>
+        <div className={out ? "aboutForm" : "aboutForm outFormAnimation"}>
+          <button onClick={outAnimation}>X</button>
         </div>
       </div>
     </div>
   );
 };
 
-export default Skills;
+export default About;

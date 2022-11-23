@@ -20,12 +20,7 @@
   );
 }
 
-.bannerShadow {
-  /* background-color: rgb(255, 255, 232); */
-}
-
 .bannerContent {
-  /* background-color: rgb(255, 174, 127); */
   margin: 33vh auto auto 10vw;
   text-align: left;
 }
@@ -36,19 +31,6 @@
   justify-content: center;
   align-items: center;
   cursor: default;
-}
-
-.bannerIcon {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-  cursor: pointer;
-  color: rgb(255, 113, 91);
-  transition: 200ms;
-}
-
-.bannerIcon:hover {
-  color: white;
 }
 
 .bannerMovment {
@@ -95,4 +77,59 @@
 
 .particle2 {
   animation: pulsation 12s infinite, movment 7s infinite !important;
+}
+
+.bannerMediaLinks {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 5vh;
+  right: 20px;
+}
+
+.bannerIcon {
+  width: 60px;
+  height: 60px;
+  margin: 17px 10px;
+  cursor: pointer;
+  color: rgb(175, 175, 175);
+  transition: 200ms;
+}
+
+.bannerMediaLinks a:hover .bannerIcon {
+  color: rgb(255, 113, 91);
+}
+
+.bannerMediaLinks a p {
+  color: white;
+  text-align: center;
+  margin: 0;
+  translate: 0 30px;
+  opacity: 0;
+  transition: 300ms;
+}
+
+.bannerMediaLinks a:hover p {
+  translate: 0 10px;
+  opacity: 1;
+}
+
+.bannerAbout button {
+  border: none;
+  background-image: linear-gradient(90deg, rgb(252, 76, 49), rgb(255, 176, 91));
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  transition: 400ms;
+  transform: scale(1.05);
+  cursor: pointer;
+  margin: 30px 40px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.bannerAbout button:hover {
+  transform: scale(1);
+  translate: 0;
+  box-shadow: 0 0 10px 0 rgba(253, 149, 107, 0.3);
 }

@@ -2,7 +2,7 @@ import "./Contact.css";
 import proyector from "../../assets/img/proyector.png";
 import ContactImages from "../ContactImages/ContactImages";
 
-const Contact = () => {
+const Contact = ({ aboutHandler }) => {
   return (
     <div id="contactContainer">
       <h1>Let's have a chat</h1>
@@ -12,7 +12,7 @@ const Contact = () => {
             <p>jeremias.petliuk@gmail.com</p>
           </a>
           <div className="contactInformationButton">
-            <button>get in touch</button>
+            <button onClick={aboutHandler}>get in touch</button>
           </div>
         </div>
         <div className="contanctAnimation">

@@ -20,11 +20,6 @@
   display: grid;
   grid-template-columns: 1fr;
   text-align: end;
-  /* background-color: black; */
-}
-
-.contactProyector {
-  /* background-color: aquamarine; */
 }
 
 .contanctAnimation img {

@@ -1,0 +1,141 @@
+.aboutContainerWraper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10000;
+  animation: backgroundAppear 1s;
+  /* backdrop-filter: blur(2px); */
+}
+
+@keyframes backgroundAppear {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+@keyframes backgroundDisappear {
+  from {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  to {
+    background-color: transparent;
+  }
+}
+
+.backgroundOut {
+  animation: backgroundDisappear 600ms;
+}
+
+.aboutContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: fixed;
+  width: 80vw;
+  height: 80vh;
+  z-index: 10000;
+  top: 50%;
+  left: 50%;
+  margin-left: -40vw;
+  margin-top: -40vh;
+  text-align: left;
+}
+
+.outInfoAnimation {
+  transition: 600ms;
+  translate: -100% 0;
+  opacity: 0;
+}
+
+.outFormAnimation {
+  transition: 600ms;
+  translate: 100% 0;
+  opacity: 0;
+}
+
+.aboutInfo {
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  animation: aboutAppearUp 750ms ease-out;
+}
+
+.aboutInfo div {
+  margin: 50px;
+  background-color: aqua;
+}
+
+.aboutForm {
+  background-color: rgb(255, 113, 91);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  animation: aboutAppear 750ms ease-out;
+}
+
+.skillsList {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: blueviolet; */
+  margin: 0 !important;
+}
+.skillsList div {
+  margin: 10px;
+  /* background-color: aqua; */
+}
+
+.skillsList div p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.skillsList .skillsIcon {
+  color: black;
+  transition: 200ms;
+  width: 30px;
+  height: 30px;
+}
+
+.skillsList .skillsIcon:hover {
+  color: rgb(255, 113, 91);
+}
+
+@keyframes aboutAppear {
+  from {
+    opacity: 0;
+    top: 100%;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes aboutAppearUp {
+  from {
+    opacity: 0;
+    top: -100%;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.aboutForm button {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
