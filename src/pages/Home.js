@@ -6,7 +6,7 @@ import Experimets from "../components/Experiments/Experimets";
 import Testing from "../components/testing";
 import About from "../components/About/About";
 import { useState } from "react";
-
+import "./Home.css";
 const Home = () => {
   const [showAbout, setShowAbout] = useState(false);
 
@@ -16,10 +16,8 @@ const Home = () => {
 
   return (
     <div
-      style={{
-        backgroundImage: `url("/backgrounds/pageBackground.svg")`,
-        backgroundSize: "100%",
-      }}
+      className="home"
+      style={{ backgroundImage: `url("/backgrounds/pageBackground.svg")` }}
     >
       {showAbout ? <About aboutHandler={aboutHandler} /> : null}
       <Banner aboutHandler={aboutHandler} />

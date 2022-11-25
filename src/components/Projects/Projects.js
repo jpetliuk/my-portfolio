@@ -1,4 +1,5 @@
 import "./Projects.css";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -18,7 +19,9 @@ const Projects = () => {
               people…..
             </p>
             <div className="projectDescriptionButton">
-              <button>View Project</button>
+              <Link to={"/project/target-gym"}>
+                <button>View Project</button>
+              </Link>
             </div>
           </div>
           <div className="projectsSnippet targetGym"></div>
@@ -36,7 +39,9 @@ const Projects = () => {
               people…..
             </p>
             <div className="projectDescriptionButton">
-              <button>View Project</button>
+              <Link to={"/project/klap-tools"}>
+                <button>View Project</button>
+              </Link>
             </div>
           </div>
           <div className="projectsSnippet klapTools"></div>

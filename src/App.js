@@ -1,11 +1,17 @@
-import "./App.css";
 import Home from "./pages/Home";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import KlapTools from "./pages/KlapTools";
+import TargetGym from "./pages/TargetGym";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="project/klap-tools" element={<KlapTools />}></Route>
+        <Route path="project/target-gym" element={<TargetGym />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

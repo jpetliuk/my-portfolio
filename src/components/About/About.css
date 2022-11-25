@@ -11,6 +11,10 @@
   /* backdrop-filter: blur(2px); */
 }
 
+.backgroundOut {
+  animation: backgroundDisappear 600ms;
+}
+
 @keyframes backgroundAppear {
   from {
     background-color: transparent;
@@ -27,10 +31,6 @@
   to {
     background-color: transparent;
   }
-}
-
-.backgroundOut {
-  animation: backgroundDisappear 600ms;
 }
 
 .aboutContainer {
@@ -50,13 +50,22 @@
 .outInfoAnimation {
   transition: 600ms;
   translate: -100% 0;
-  opacity: 0;
+  animation: dis 400ms forwards !important;
 }
 
 .outFormAnimation {
   transition: 600ms;
   translate: 100% 0;
-  opacity: 0;
+  animation: dis 400ms forwards !important;
+}
+
+@keyframes dis {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .aboutInfo {
@@ -64,12 +73,19 @@
   height: 100%;
   width: 100%;
   position: relative;
-  animation: aboutAppearUp 750ms ease-out;
+  animation: aboutAppearUp 900ms ease;
+  opacity: 1;
 }
 
-.aboutInfo div {
-  margin: 50px;
-  background-color: aqua;
+@keyframes aboutAppearUp {
+  from {
+    opacity: 0;
+    top: -100%;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 .aboutForm {
@@ -77,7 +93,25 @@
   height: 100%;
   width: 100%;
   position: relative;
-  animation: aboutAppear 750ms ease-out;
+  animation: aboutAppear 900ms ease forwards;
+  animation-delay: 250ms;
+  opacity: 0;
+}
+
+@keyframes aboutAppear {
+  from {
+    opacity: 0;
+    top: 100%;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.aboutInfo div {
+  margin: 50px;
+  /* background-color: aqua; */
 }
 
 .skillsList {
@@ -112,30 +146,14 @@
   color: rgb(255, 113, 91);
 }
 
-@keyframes aboutAppear {
-  from {
-    opacity: 0;
-    top: 100%;
-  }
-  to {
-    opacity: 1;
-    top: 0;
-  }
-}
-
-@keyframes aboutAppearUp {
-  from {
-    opacity: 0;
-    top: -100%;
-  }
-  to {
-    opacity: 1;
-    top: 0;
-  }
-}
-
 .aboutForm button {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
 }

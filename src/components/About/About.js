@@ -17,6 +17,7 @@ import {
   faGit,
 } from "@fortawesome/free-brands-svg-icons";
 import { useState, useEffect } from "react";
+import Form from "./Form";
 
 const About = ({ aboutHandler }) => {
   useEffect(() => {
@@ -110,6 +111,9 @@ const About = ({ aboutHandler }) => {
         </div>
         <div className={out ? "aboutForm" : "aboutForm outFormAnimation"}>
           <button onClick={outAnimation}>X</button>
+          <h1>Let's chat</h1>
+          <p>New projects, contrataciones or even a coffee.</p>
+          <Form />
         </div>
       </div>
     </div>
