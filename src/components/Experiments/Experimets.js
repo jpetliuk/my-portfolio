@@ -37,7 +37,7 @@ const Experimets = () => {
           <div className="experimentsProject"></div>
           <div className="experimentsProjectAnimation">
             <div className="ePAContent">
-              <h1>something else</h1>
+              <h1>Comming soon</h1>
               <p>description about the project etcetc...</p>
             </div>
           </div>

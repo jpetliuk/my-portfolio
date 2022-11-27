@@ -8,7 +8,6 @@
   position: fixed;
   z-index: 10000;
   animation: backgroundAppear 1s;
-  /* backdrop-filter: blur(2px); */
 }
 
 .backgroundOut {
@@ -37,12 +36,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: fixed;
-  width: 80vw;
+  width: 1170px;
   height: 80vh;
   z-index: 10000;
   top: 50%;
-  left: 50%;
-  margin-left: -40vw;
+  margin-left: auto;
   margin-top: -40vh;
   text-align: left;
 }
@@ -69,12 +67,13 @@
 }
 
 .aboutInfo {
-  background-color: rgb(255, 255, 255);
+  background-color: hsla(0, 0%, 95%, 0.97);
   height: 100%;
   width: 100%;
   position: relative;
   animation: aboutAppearUp 900ms ease;
   opacity: 1;
+  color: #1c1d25;
 }
 
 @keyframes aboutAppearUp {
@@ -89,13 +88,14 @@
 }
 
 .aboutForm {
-  background-color: rgb(255, 113, 91);
+  background-color: rgba(28, 29, 37, 0.985);
   height: 100%;
   width: 100%;
   position: relative;
   animation: aboutAppear 900ms ease forwards;
   animation-delay: 250ms;
   opacity: 0;
+  color: #dadada;
 }
 
 @keyframes aboutAppear {
@@ -111,7 +111,10 @@
 
 .aboutInfo div {
   margin: 50px;
-  /* background-color: aqua; */
+}
+
+.aboutForm div {
+  margin: 50px;
 }
 
 .skillsList {
@@ -121,12 +124,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* background-color: blueviolet; */
   margin: 0 !important;
 }
 .skillsList div {
   margin: 10px;
-  /* background-color: aqua; */
 }
 
 .skillsList div p {
@@ -155,5 +156,36 @@
 form {
   display: flex;
   flex-direction: column;
-  width: fit-content;
+}
+
+label {
+  margin: 20px 0;
+}
+
+input,
+textarea {
+  background-color: transparent !important;
+  border: none;
+  border-bottom: solid 3px silver;
+  color: silver;
+  -webkit-background-clip: text !important;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+#submitButton {
+  width: 100px;
+  margin: auto;
+  cursor: pointer;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: silver;
+}
+
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: silver;
 }

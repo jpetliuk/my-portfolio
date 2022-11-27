@@ -5,7 +5,7 @@ import Contact from "../components/Contact/Contact";
 import Experimets from "../components/Experiments/Experimets";
 import Testing from "../components/testing";
 import About from "../components/About/About";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Home.css";
 const Home = () => {
   const [showAbout, setShowAbout] = useState(false);
@@ -13,6 +13,10 @@ const Home = () => {
   const aboutHandler = () => {
     setShowAbout(!showAbout);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div

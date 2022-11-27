@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
 import "./ProjectStyle.css";
+import { useEffect } from "react";
 
 const TargetGym = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Link to="/">

@@ -1,9 +1,15 @@
 import "./NavBar.css";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <div id="navBarContainer">
-      <p>Contac</p>
+      <ul>
+        <Link to="/">
+          <p>back home</p>
+        </Link>
+        <p>Contact</p>
+      </ul>
     </div>
   );
 };

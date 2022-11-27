@@ -7,6 +7,8 @@ export const Form = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    if (verifyContent() === false) return;
+
     emailjs
       .sendForm(
         "service_9qasuo7",
@@ -17,6 +19,10 @@ export const Form = () => {
       .then(
         (result) => {
           console.log(result.text);
+          document.getElementById("name").readOnly = true;
+          document.getElementById("email").readOnly = true;
+          document.getElementById("message").readOnly = true;
+          document.getElementById("submitButton").type = "text";
         },
         (error) => {
           console.log(error.text);
@@ -24,15 +30,26 @@ export const Form = () => {
       );
   };
 
+  const verifyContent = () => {
+    const email = document.getElementById("email").value;
+    const emailRegex =
+      /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+
+    if (document.getElementById("name").value.length < 3) return false;
+    if (document.getElementById("message").value.length < 10) return false;
+    if (!emailRegex.test(email)) return false;
+    else return true;
+  };
+
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send Message" />
+    <form ref={form} autocomplete="off" onSubmit={sendEmail}>
+      <label>Name*</label>
+      <input id="name" type="text" name="user_name" onChange={verifyContent} />
+      <label>Email*</label>
+      <input id="email" type="email" name="user_email" required />
+      <label>Message*</label>
+      <textarea id="message" name="message" required />
+      <input id="submitButton" type="submit" value="Send Message" />
     </form>
   );
 };

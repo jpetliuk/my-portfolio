@@ -1,0 +1,25 @@
+#navBarContainer {
+  position: absolute;
+  right: 0;
+  margin-right: 90px;
+  z-index: 1;
+}
+
+#navBarContainer ul {
+  display: flex;
+  flex-direction: row;
+}
+
+#navBarContainer ul p {
+  color: white;
+  margin-left: 50px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  transition: color 300ms;
+  cursor: pointer;
+}
+
+#navBarContainer ul p:hover {
+  color: rgb(255, 113, 91);
+}

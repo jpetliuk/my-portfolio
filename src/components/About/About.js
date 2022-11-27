@@ -110,10 +110,12 @@ const About = ({ aboutHandler }) => {
           </div>
         </div>
         <div className={out ? "aboutForm" : "aboutForm outFormAnimation"}>
-          <button onClick={outAnimation}>X</button>
-          <h1>Let's chat</h1>
-          <p>New projects, contrataciones or even a coffee.</p>
-          <Form />
+          <div>
+            <button onClick={outAnimation}>X</button>
+            <h1>Let's chat</h1>
+            <p>New projects, contrataciones or even a coffee.</p>
+            <Form />
+          </div>
         </div>
       </div>
     </div>

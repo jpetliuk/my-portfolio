@@ -24,9 +24,10 @@ span {
   font-family: "League Spartan", sans-serif;
   margin: 0;
   padding: 0;
+  cursor: text;
 }
 
-span:hover {
+/* span:hover {
   color: rgb(255, 113, 91);
   font-size: 3.1rem;
-}
+} */
