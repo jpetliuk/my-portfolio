@@ -11,7 +11,7 @@ import tortuga from "../../assets/img/tortuga.png";
 import zorro from "../../assets/img/zorro.png";
 
 const ContactImages = () => {
-  const [image, setImage] = useState(elefante);
+  const [image, setImage] = useState(zorro);
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const ContactImages = () => {
       zorro,
     ];
     setTimeout(() => {
-      count === allImages.length() - 1 ? setCount(0) : setCount(count + 1);
+      count === 8 ? setCount(0) : setCount(count + 1);
       setImage(allImages[count]);
     }, 9000);
   }, [count]);
