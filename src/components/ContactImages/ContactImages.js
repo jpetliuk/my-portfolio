@@ -11,7 +11,7 @@ import tortuga from "../../assets/img/tortuga.png";
 import zorro from "../../assets/img/zorro.png";
 
 const ContactImages = () => {
-  let allImages = [
+  const allImages = [
     elefante,
     rana,
     cactus,

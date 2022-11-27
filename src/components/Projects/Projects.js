@@ -1,5 +1,7 @@
 import "./Projects.css";
 import { Link } from "react-router-dom";
+import klapPreview from "../../assets/img/klap/KlapPreview.png";
+import targetGymPreview from "../../assets/img/klap/targetGymPreview.png";
 
 const Projects = () => {
   return (
@@ -24,7 +26,9 @@ const Projects = () => {
               </Link>
             </div>
           </div>
-          <div className="projectsSnippet targetGym"></div>
+          <div className="projectsSnippet">
+            <img src={targetGymPreview} alt="klaptools preview" />
+          </div>
         </div>
         <div className="projectsProject">
           <div className="projectDescription">
@@ -44,7 +48,9 @@ const Projects = () => {
               </Link>
             </div>
           </div>
-          <div className="projectsSnippet klapTools"></div>
+          <div className="projectsSnippet">
+            <img src={klapPreview} alt="klaptools preview" />
+          </div>
         </div>
       </div>
     </div>
