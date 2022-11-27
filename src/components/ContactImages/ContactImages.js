@@ -11,23 +11,24 @@ import tortuga from "../../assets/img/tortuga.png";
 import zorro from "../../assets/img/zorro.png";
 
 const ContactImages = () => {
-  const allImages = [
-    elefante,
-    rana,
-    cactus,
-    koi,
-    conejo,
-    cangrejo,
-    molino,
-    tortuga,
-    zorro,
-  ];
-
+  const [image, setImage] = useState(elefante);
   const [count, setCount] = useState(0);
 
   useEffect(() => {
+    const allImages = [
+      elefante,
+      rana,
+      cactus,
+      koi,
+      conejo,
+      cangrejo,
+      molino,
+      tortuga,
+      zorro,
+    ];
     setTimeout(() => {
-      count === allImages.length - 1 ? setCount(0) : setCount(count + 1);
+      count === allImages.length() - 1 ? setCount(0) : setCount(count + 1);
+      setImage(allImages[count]);
     }, 9000);
   }, [count]);
 
@@ -45,7 +46,7 @@ const ContactImages = () => {
       <img
         onClick={reset === false ? resetAnimation : null}
         className={reset === false ? null : "rotate"}
-        src={allImages[count]}
+        src={image}
         alt="moving pictures"
       />
     </div>
