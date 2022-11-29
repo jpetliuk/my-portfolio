@@ -45,11 +45,7 @@ const KlapTools = () => {
           </div>
           <div>
             <h2>Live</h2>
-            <a
-              target={"_blank"}
-              rel="noreferrer"
-              href="https://github.com/jpetliuk"
-            >
+            <a target={"_blank"} rel="noreferrer" href="https://klaptools.com/">
               <p className="linkText">Site</p>
             </a>
           </div>

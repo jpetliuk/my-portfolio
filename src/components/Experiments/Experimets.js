@@ -10,25 +10,35 @@ const Experimets = () => {
           <div className="experimentsProject"></div>
           <div className="experimentsProjectAnimation">
             <div className="ePAContent">
-              <h1>Films website</h1>
+              <h1>Comming soon</h1>
               <p>description about the project etcetc...</p>
             </div>
           </div>
         </div>
         <div className="experimentsProjectWrapper">
-          <div className="experimentsProject"></div>
+          <div
+            className="experimentsProject"
+            style={{
+              backgroundImage: `url("/experiments/gymBackground.jpg")`,
+            }}
+          ></div>
           <div className="experimentsProjectAnimation">
             <div className="ePAContent">
-              <h1>Workout-Logs</h1>
+              <h1>Comming soon</h1>
               <p>description about the project etcetc...</p>
             </div>
           </div>
         </div>
         <div className="experimentsProjectWrapper">
-          <div className="experimentsProject"></div>
+          <div
+            className="experimentsProject"
+            style={{
+              backgroundImage: `url("/experiments/sushi.jpg")`,
+            }}
+          ></div>
           <div className="experimentsProjectAnimation">
             <div className="ePAContent">
-              <h1>Interesting thing</h1>
+              <h1>Comming soon</h1>
               <p>description about the project etcetc...</p>
             </div>
           </div>

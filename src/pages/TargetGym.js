@@ -41,7 +41,7 @@ const TargetGym = () => {
             <a
               target={"_blank"}
               rel="noreferrer"
-              href="https://github.com/jpetliuk"
+              href="https://gregarious-scone-ad0e38.netlify.app/"
             >
               <p className="linkText">Site</p>
             </a>
