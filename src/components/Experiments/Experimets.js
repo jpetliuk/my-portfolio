@@ -18,9 +18,11 @@ const Experimets = () => {
         <div className="experimentsProjectWrapper">
           <div
             className="experimentsProject"
-            style={{
-              backgroundImage: `url("/experiments/gymBackground.jpg")`,
-            }}
+            style={
+              {
+                // backgroundImage: `url("/experiments/gymBackground.jpg")`,
+              }
+            }
           ></div>
           <div className="experimentsProjectAnimation">
             <div className="ePAContent">
@@ -32,9 +34,11 @@ const Experimets = () => {
         <div className="experimentsProjectWrapper">
           <div
             className="experimentsProject"
-            style={{
-              backgroundImage: `url("/experiments/sushi.jpg")`,
-            }}
+            style={
+              {
+                // backgroundImage: `url("/experiments/sushi.jpg")`,
+              }
+            }
           ></div>
           <div className="experimentsProjectAnimation">
             <div className="ePAContent">
