@@ -42,7 +42,7 @@ const TargetGym = () => {
       </div>
       <div className="projectContainer">
         <h1>Target Gym</h1>
-        <p>assadasdaf</p>
+        <p>A fitness franchise located in Buenos Aires, Argentina.</p>
         <img className="projectImage" src={home} alt="project preview" />
         <div className="projectRelevantInfo">
           <div>
@@ -71,7 +71,11 @@ const TargetGym = () => {
           </div>
         </div>
         <h1>Project Purpose and Goal</h1>
-        <p>afadjfaodfaiofdsiofdfisdfspid</p>
+        <p>
+          This project conssisted in redesign it's website, the main porpuse of
+          the project was to create a website easy to read so that people could
+          know where to find them and their schedual.
+        </p>
         <img className="projectImage" src={sedes} alt="project preview" />
         <img className="projectImage" src={sede} alt="project preview" />
       </div>

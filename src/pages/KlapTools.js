@@ -44,7 +44,11 @@ const KlapTools = () => {
       </div>
       <div className="projectContainer">
         <h1>Klap Tools</h1>
-        <p>assadasdaf</p>
+        <p>
+          Klap Tools are a team of professional musicians and sound engineers
+          with more than 10 years of experience providing audio and music
+          solutions for companies, labels, commercials and artists.
+        </p>
         <img className="projectImage" src={firstPage} alt="project preview" />
         <div className="projectRelevantInfo">
           <div>
@@ -59,7 +63,14 @@ const KlapTools = () => {
           </div>
         </div>
         <h1>Project Purpose and Goal</h1>
-        <p>afadjfaodfaiofdsiofdfisdfspid</p>
+        <p>
+          For this website the goal was to desing and create an ecommerce where
+          they could sell their products, with users, reviews, and various
+          payment methods.
+          <br />
+          With the team of Klap Tools we came to the conclusion that Wordpress
+          would be the best option.
+        </p>
         <img className="projectImage" src={aboutUs} alt="project preview" />
         <img className="projectImage" src={register} alt="project preview" />
         <img className="projectImage" src={services} alt="project preview" />
