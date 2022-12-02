@@ -171,3 +171,11 @@
   position: absolute;
   right: calc(16% - 60px);
 }
+
+.targetGymContainer #navBarContainer ul p:hover {
+  color: #2e38ac !important;
+}
+
+.klapToolsContainer #navBarContainer ul li p:hover {
+  color: rgb(255, 113, 91) !important;
+}

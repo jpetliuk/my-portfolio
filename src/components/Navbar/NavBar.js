@@ -1,14 +1,18 @@
 import "./NavBar.css";
 import { Link } from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = ({ aboutHandler }) => {
   return (
     <div id="navBarContainer">
       <ul>
-        <Link to="/">
-          <p>back home</p>
-        </Link>
-        <p>Contact</p>
+        <li>
+          <Link to="/">
+            <p>back home</p>
+          </Link>
+        </li>
+        <li>
+          <p onClick={aboutHandler}>Contact</p>
+        </li>
       </ul>
     </div>
   );

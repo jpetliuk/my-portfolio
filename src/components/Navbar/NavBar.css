@@ -10,16 +10,21 @@
   flex-direction: row;
 }
 
-#navBarContainer ul p {
-  color: white;
+#navBarContainer ul li {
+  list-style: none;
   margin-left: 50px;
+}
+
+#navBarContainer ul li p {
+  color: white;
   font-family: "League Spartan", sans-serif;
   font-weight: 700;
   font-size: 1.3rem;
   transition: color 300ms;
   cursor: pointer;
+  padding: 0;
 }
 
-#navBarContainer ul p:hover {
+#navBarContainer ul li p:hover {
   color: rgb(255, 113, 91);
 }

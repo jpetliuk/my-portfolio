@@ -1,14 +1,21 @@
 import Footer from "../components/Footer/Footer";
 import "./ProjectStyle.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import firstPage from "../assets/img/klap/first-page.png";
 import aboutUs from "../assets/img/klap/about-us.png";
 import register from "../assets/img/klap/register.png";
 import services from "../assets/img/klap/services.png";
 import myAccount from "../assets/img/klap/my-account.png";
 import NavBar from "../components/Navbar/NavBar";
+import About from "../components/About/About";
 
 const KlapTools = () => {
+  const [showAbout, setShowAbout] = useState(false);
+
+  const aboutHandler = () => {
+    setShowAbout(!showAbout);
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -18,7 +25,8 @@ const KlapTools = () => {
       className="klapToolsContainer"
       style={{ backgroundImage: `url("/backgrounds/pageBackground.svg")` }}
     >
-      <NavBar />
+      <NavBar aboutHandler={aboutHandler} />
+      {showAbout ? <About aboutHandler={aboutHandler} /> : null}
       <div className="banner">
         <h1>Klap Tools</h1>
         <p>Music production, mix and mastering.</p>
