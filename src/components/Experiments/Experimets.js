@@ -11,7 +11,7 @@ const Experimets = () => {
           <div className="experimentsProjectAnimation">
             <div className="ePAContent">
               <h1>Comming soon</h1>
-              <p>description about the project etcetc...</p>
+              {/* <p>description about the project etcetc...</p> */}
             </div>
           </div>
         </div>
@@ -27,7 +27,7 @@ const Experimets = () => {
           <div className="experimentsProjectAnimation">
             <div className="ePAContent">
               <h1>Comming soon</h1>
-              <p>description about the project etcetc...</p>
+              {/* <p>description about the project etcetc...</p> */}
             </div>
           </div>
         </div>
@@ -43,7 +43,7 @@ const Experimets = () => {
           <div className="experimentsProjectAnimation">
             <div className="ePAContent">
               <h1>Comming soon</h1>
-              <p>description about the project etcetc...</p>
+              {/* <p>description about the project etcetc...</p> */}
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@ const Experimets = () => {
           <div className="experimentsProjectAnimation">
             <div className="ePAContent">
               <h1>Comming soon</h1>
-              <p>description about the project etcetc...</p>
+              {/* <p>description about the project etcetc...</p> */}
             </div>
           </div>
         </div>

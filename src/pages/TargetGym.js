@@ -1,11 +1,9 @@
 import Footer from "../components/Footer/Footer";
 import "./ProjectStyle.css";
 import { useEffect, useState } from "react";
-import firstPage from "../assets/img/klap/first-page.png";
-import aboutUs from "../assets/img/klap/about-us.png";
-import register from "../assets/img/klap/register.png";
-import services from "../assets/img/klap/services.png";
-import myAccount from "../assets/img/klap/my-account.png";
+import home from "../assets/img/targetGym/home.png";
+import sedes from "../assets/img/targetGym/sedes.png";
+import sede from "../assets/img/targetGym/sede.png";
 import NavBar from "../components/Navbar/NavBar";
 import About from "../components/About/About";
 
@@ -45,7 +43,7 @@ const TargetGym = () => {
       <div className="projectContainer">
         <h1>Target Gym</h1>
         <p>assadasdaf</p>
-        <img className="projectImage" src={firstPage} alt="project preview" />
+        <img className="projectImage" src={home} alt="project preview" />
         <div className="projectRelevantInfo">
           <div>
             <h2>Tools</h2>
@@ -74,10 +72,8 @@ const TargetGym = () => {
         </div>
         <h1>Project Purpose and Goal</h1>
         <p>afadjfaodfaiofdsiofdfisdfspid</p>
-        <img className="projectImage" src={aboutUs} alt="project preview" />
-        <img className="projectImage" src={register} alt="project preview" />
-        <img className="projectImage" src={services} alt="project preview" />
-        <img className="projectImage" src={myAccount} alt="project preview" />
+        <img className="projectImage" src={sedes} alt="project preview" />
+        <img className="projectImage" src={sede} alt="project preview" />
       </div>
       <Footer />
     </div>

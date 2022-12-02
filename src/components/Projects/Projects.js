@@ -10,28 +10,6 @@ const Projects = () => {
       <div className="projectsProjectsContainer">
         <div className="projectsProject">
           <div className="projectDescription">
-            <h1>Target GYM</h1>
-            <h2>Frontend and Design</h2>
-            <div className="projectTool">
-              <p>React</p>
-            </div>
-            <p>
-              This project conssisted in redesigning a website for a gym
-              franchaise, we did it as a Single Page Application, so that
-              people…..
-            </p>
-            <div className="projectDescriptionButton">
-              <Link to={"/project/target-gym"}>
-                <button>View Project</button>
-              </Link>
-            </div>
-          </div>
-          <div className="projectsSnippet">
-            <img src={targetGymPreview} alt="klaptools preview" />
-          </div>
-        </div>
-        <div className="projectsProject">
-          <div className="projectDescription">
             <h1>Klap Tools</h1>
             <h2>Frontend and Design</h2>
             <div className="projectTool">
@@ -50,6 +28,28 @@ const Projects = () => {
           </div>
           <div className="projectsSnippet">
             <img src={klapPreview} alt="klaptools preview" />
+          </div>
+        </div>
+        <div className="projectsProject">
+          <div className="projectDescription">
+            <h1>Target GYM</h1>
+            <h2>Frontend and Design</h2>
+            <div className="projectTool">
+              <p>React</p>
+            </div>
+            <p>
+              This project conssisted in redesigning a website for a gym
+              franchaise, we did it as a Single Page Application, so that
+              people…..
+            </p>
+            <div className="projectDescriptionButton">
+              <Link to={"/project/target-gym"}>
+                <button>View Project</button>
+              </Link>
+            </div>
+          </div>
+          <div className="projectsSnippet">
+            <img src={targetGymPreview} alt="klaptools preview" />
           </div>
         </div>
       </div>
