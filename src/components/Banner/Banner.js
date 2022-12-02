@@ -130,7 +130,7 @@ const Banner = ({ aboutHandler }) => {
               <span>r</span>
             </h1>
           </div>
-          <p>place holder text for description about myselft.</p>
+          <p>I love learning and creating interesting stuff.</p>
           <div className="bannerAbout">
             <button onClick={aboutHandler}>About Me</button>
           </div>

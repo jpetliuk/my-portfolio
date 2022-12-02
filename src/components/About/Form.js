@@ -42,7 +42,7 @@ export const Form = () => {
   };
 
   return (
-    <form ref={form} autocomplete="off" onSubmit={sendEmail}>
+    <form ref={form} autoComplete="off" onSubmit={sendEmail}>
       <label>Name*</label>
       <input id="name" type="text" name="user_name" onChange={verifyContent} />
       <label>Email*</label>

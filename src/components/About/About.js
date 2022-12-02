@@ -56,7 +56,7 @@ const About = ({ aboutHandler }) => {
               Hello I'm Jeremias Petliuk, a 22-year-old Frontend developer born
               in Argentina.
               <br />I love to learn new technologies and building all kinds of
-              things, resolve problems, create smart user interface and image
+              things, resolve problems, create smart user interface and imagine
               useful interaction.
             </p>
           </div>
@@ -118,9 +118,13 @@ const About = ({ aboutHandler }) => {
         </div>
         <div className={out ? "aboutForm" : "aboutForm outFormAnimation"}>
           <div>
-            <button onClick={outAnimation}>X</button>
+            <p className="closeAbout" onClick={outAnimation}>
+              X
+            </p>
             <h1>Let's chat</h1>
-            <p>New projects, contrataciones or even a coffee.</p>
+            <p className="formSubtitlte">
+              send me a message so I can know more about you.
+            </p>
             <Form />
           </div>
         </div>
