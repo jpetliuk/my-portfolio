@@ -41,7 +41,14 @@ const About = ({ aboutHandler }) => {
       }
     >
       <div className="aboutContainer">
-        <div className={out ? "aboutInfo" : "aboutInfo outInfoAnimation"}>
+        <div
+          style={
+            {
+              // backgroundImage: `url("/backgrounds/skillsBackground6.svg")`,
+            }
+          }
+          className={out ? "aboutInfo" : "aboutInfo outInfoAnimation"}
+        >
           <div>
             <h1>About me.</h1>
             <p>Frontend Developer.</p>

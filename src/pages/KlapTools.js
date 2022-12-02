@@ -23,13 +23,13 @@ const KlapTools = () => {
         <h1>Klap Tools</h1>
         <p>Music production, mix and mastering.</p>
         <div className="roles">
-          <p>
+          <p className="left">
             <span>contex</span> website design
           </p>
-          <p>
+          <p className="center">
             <span>role</span> developer and design
           </p>
-          <p>
+          <p className="right">
             <span>period</span> early 2022
           </p>
         </div>

@@ -3,6 +3,54 @@
 .klapToolsContainer {
   font-family: "Montserrat", sans-serif;
   text-rendering: optimizeLegibility;
+  background-size: contain;
+}
+
+.klapToolsContainer .banner {
+  background-image: linear-gradient(
+    0deg,
+    hsl(199deg 100% 46%) 0%,
+    hsl(202deg 100% 44%) 8%,
+    hsl(204deg 100% 41%) 14%,
+    hsl(207deg 100% 39%) 17%,
+    hsl(210deg 100% 36%) 21%,
+    hsl(213deg 100% 33%) 27%,
+    hsl(217deg 100% 30%) 37%,
+    hsl(222, 100%, 27%) 53%,
+    hsl(229deg 100% 23%) 74%,
+    hsl(240deg 100% 20%) 100%
+  );
+}
+
+.targetGymContainer {
+  font-family: "Montserrat", sans-serif;
+  text-rendering: optimizeLegibility;
+  background-size: contain;
+}
+
+.targetGymContainer .banner {
+  background-image: linear-gradient(
+    0deg,
+    hsl(31deg 100% 50%) 0%,
+    hsl(30deg 100% 49%) 8%,
+    hsl(28deg 100% 48%) 14%,
+    hsl(26deg 100% 47%) 17%,
+    hsl(25deg 100% 46%) 21%,
+    hsl(23deg 100% 44%) 27%,
+    hsl(21deg 100% 43%) 37%,
+    hsl(19deg 100% 42%) 53%,
+    hsl(16deg 99% 41%) 74%,
+    hsl(13deg 98% 40%) 100%
+  );
+}
+
+.targetGymContainer .roles span {
+  color: #006400;
+  transition: color 200ms;
+}
+
+.targetGymContainer .roles p:hover span {
+  color: #003d00;
 }
 
 .projectContainer {
@@ -62,10 +110,6 @@
   width: min-content;
 }
 
-.klapToolsContainer {
-  background-size: contain;
-}
-
 .banner {
   position: relative;
   height: 600px;
@@ -73,19 +117,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(
-    0deg,
-    hsl(199deg 100% 46%) 0%,
-    hsl(202deg 100% 44%) 8%,
-    hsl(204deg 100% 41%) 14%,
-    hsl(207deg 100% 39%) 17%,
-    hsl(210deg 100% 36%) 21%,
-    hsl(213deg 100% 33%) 27%,
-    hsl(217deg 100% 30%) 37%,
-    hsl(222deg 100% 27%) 53%,
-    hsl(229deg 100% 23%) 74%,
-    hsl(240deg 100% 20%) 100%
-  );
 }
 
 .banner h1,
@@ -102,10 +133,11 @@
 
 .roles {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   position: absolute;
   bottom: 0;
   width: 100%;
+  height: 50px;
 }
 
 .roles p,
@@ -116,11 +148,26 @@
   cursor: pointer;
 }
 
-.roles span {
-  color: rgb(255, 113, 91);
+.klapToolsContainer .roles span {
+  color: #f39237;
   transition: color 200ms;
 }
 
-.roles p:hover span {
-  color: rgb(255, 60, 40);
+.klapToolsContainer .roles p:hover span {
+  color: #e7770d;
+}
+
+.banner .roles .left {
+  position: absolute;
+  left: calc(16% - 120px);
+}
+
+.banner .roles .center {
+  position: absolute;
+  left: calc(50% - 120px);
+}
+
+.banner .roles .right {
+  position: absolute;
+  right: calc(16% - 60px);
 }

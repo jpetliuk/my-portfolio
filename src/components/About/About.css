@@ -74,6 +74,7 @@
   animation: aboutAppearUp 900ms ease;
   opacity: 1;
   color: #1c1d25;
+  background-size: cover;
 }
 
 @keyframes aboutAppearUp {
