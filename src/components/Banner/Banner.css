@@ -60,7 +60,6 @@
   }
 
   .bannerContent p {
-    width: 70%;
-    margin: auto;
+    margin: auto 1vw;
   }
 }
