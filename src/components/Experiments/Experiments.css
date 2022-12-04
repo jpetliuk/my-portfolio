@@ -5,17 +5,23 @@
   /* background-color: aqua; */
 }
 
-@media screen and (min-width: 960px) {
+@media (min-width: 960px) {
   .experimentsProjectsContainer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
-@media screen and (max-width: 959px) {
+@media (max-width: 959px) {
   .experimentsProjectsContainer {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* @media (max-width: 800px) {
+  .experimentsProjectsContainer {
+    grid-template-columns: 1fr;
+  }
+} */
 
 .experimentsSubtitle {
   color: rgb(157, 109, 102);

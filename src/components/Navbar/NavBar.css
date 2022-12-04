@@ -65,3 +65,10 @@
   translate: 0 10px;
   opacity: 1;
 }
+
+@media (max-width: 800px) {
+  .bannerMediaLinks,
+  #navBarContainer {
+    display: none;
+  }
+}

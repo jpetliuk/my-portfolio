@@ -84,3 +84,27 @@
 .projectsSnippet img {
   width: 100%;
 }
+
+@media (max-width: 800px) {
+  .projectsProject {
+    grid-template-columns: 1fr;
+  }
+
+  .projectDescription {
+    text-align: center;
+    margin: auto;
+    width: 500px;
+  }
+
+  .projectDescriptionButton {
+    margin: auto;
+  }
+
+  .projectTool {
+    margin: auto;
+  }
+
+  .projectsSnippet {
+    margin: auto;
+  }
+}
