@@ -227,3 +227,19 @@ input:-webkit-autofill:focus {
   font-family: "League Spartan", sans-serif;
   font-size: 400;
 }
+
+@media (max-width: 1200px) {
+  .aboutContainer {
+    grid-template-columns: 1fr;
+    width: 80vw;
+    overflow-y: scroll;
+  }
+
+  .aboutContainer::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  .aboutInfo {
+    height: 500px;
+  }
+}
