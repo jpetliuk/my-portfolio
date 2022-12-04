@@ -1,0 +1,45 @@
+.bannerMovment {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  transition: 1.5s ease-out;
+  animation: pulsation 16s infinite, movment 11s infinite;
+  filter: blur(1);
+  filter: drop-shadow(0px 0px 5px rgb(188, 111, 146));
+}
+
+.bannerMovment div {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: rgb(197, 162, 86);
+  width: 70px;
+  height: 70px;
+}
+
+@keyframes pulsation {
+  from {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.05;
+    transform: scale(1.2);
+  }
+  to {
+    opacity: 0.15;
+  }
+}
+
+@keyframes movment {
+  from {
+    translate: 0;
+  }
+  50% {
+    translate: -10px -20px;
+  }
+  to {
+    translate: 0 0;
+  }
+}
+
+.particle2 {
+  animation: pulsation 12s infinite, movment 7s infinite !important;
+}

@@ -7,7 +7,6 @@ import Testing from "../components/testing";
 import About from "../components/About/About";
 import { useState, useEffect } from "react";
 import "./Home.css";
-import NavBar from "../components/Navbar/NavBar";
 const Home = () => {
   const [showAbout, setShowAbout] = useState(false);
 
@@ -21,7 +20,6 @@ const Home = () => {
 
   return (
     <>
-      <NavBar />
       <div
         className="home"
         style={{ backgroundImage: `url("/backgrounds/pageBackground.svg")` }}
