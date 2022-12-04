@@ -88,12 +88,13 @@
 @media (max-width: 800px) {
   .projectsProject {
     grid-template-columns: 1fr;
+    width: 95%;
   }
 
   .projectDescription {
     text-align: center;
     margin: auto;
-    width: 500px;
+    width: 95%;
   }
 
   .projectDescriptionButton {
@@ -106,5 +107,6 @@
 
   .projectsSnippet {
     margin: auto;
+    width: 95%;
   }
 }

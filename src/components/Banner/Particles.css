@@ -43,3 +43,9 @@
 .particle2 {
   animation: pulsation 12s infinite, movment 7s infinite !important;
 }
+
+@media (max-width: 800px) {
+  .particle2 {
+    display: none;
+  }
+}
