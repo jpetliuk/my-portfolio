@@ -108,5 +108,6 @@
   .projectsSnippet {
     margin: auto;
     width: 95%;
+    order: -1;
   }
 }

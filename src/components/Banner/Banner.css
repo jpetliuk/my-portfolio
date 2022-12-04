@@ -56,6 +56,11 @@
 @media (max-width: 800px) {
   .bannerContent {
     text-align: center;
-    margin: 33vh auto;
+    margin: 33vh 2vw;
+  }
+
+  .bannerContent p {
+    width: 70%;
+    margin: auto;
   }
 }
