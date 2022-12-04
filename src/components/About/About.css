@@ -231,12 +231,11 @@ input:-webkit-autofill:focus {
 @media (max-width: 1200px) {
   .aboutContainer {
     grid-template-columns: 1fr;
-    width: 80vw;
+    width: 100vw;
+    height: 100vh;
     overflow-y: scroll;
-  }
-
-  .aboutContainer::-webkit-scrollbar {
-    width: 16px;
+    margin: 0;
+    top: 0;
   }
 
   .aboutInfo {
