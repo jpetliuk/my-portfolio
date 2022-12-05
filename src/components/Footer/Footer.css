@@ -22,3 +22,7 @@
 .footerIcon:hover {
   color: white;
 }
+
+#footerContainer p {
+  font-size: clamp(13px, 1vw, 16px);
+}

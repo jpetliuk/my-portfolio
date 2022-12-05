@@ -242,3 +242,7 @@ input:-webkit-autofill:focus {
     height: 500px;
   }
 }
+
+textarea {
+  height: 80px;
+}
