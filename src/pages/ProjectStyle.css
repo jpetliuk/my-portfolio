@@ -179,3 +179,43 @@
 .klapToolsContainer #navBarContainer ul li p:hover {
   color: rgb(255, 113, 91) !important;
 }
+
+@media (max-width: 800px) {
+  .roles {
+    height: 70px;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .banner .roles .left {
+    position: static;
+  }
+
+  .banner .roles .center {
+    position: static;
+  }
+
+  .banner .roles .right {
+    position: static;
+  }
+
+  .roles p,
+  .roles span {
+    margin: 0;
+    padding: 0;
+  }
+
+  .projectImage {
+    width: 90%;
+    margin: 40px auto;
+  }
+
+  .projectContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
