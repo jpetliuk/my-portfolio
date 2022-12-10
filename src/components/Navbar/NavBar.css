@@ -71,4 +71,8 @@
   #navBarContainer {
     display: none;
   }
+
+  .navBarPhone {
+    display: block !important;
+  }
 }
