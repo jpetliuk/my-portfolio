@@ -7,6 +7,7 @@ import Testing from "../components/testing";
 import About from "../components/About/About";
 import { useState, useEffect } from "react";
 import "./Home.css";
+// import Transition from "../components/Transitions/Transition";
 const Home = () => {
   const [showAbout, setShowAbout] = useState(false);
 
@@ -27,7 +28,6 @@ const Home = () => {
         {showAbout ? <About aboutHandler={aboutHandler} /> : null}
         <Banner aboutHandler={aboutHandler} />
         <Projects />
-        <Experimets />
         <Contact aboutHandler={aboutHandler} />
         <Footer />
         <Testing />
