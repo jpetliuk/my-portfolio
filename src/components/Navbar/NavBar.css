@@ -67,12 +67,10 @@
 }
 
 @media (max-width: 800px) {
-  .bannerMediaLinks,
-  #navBarContainer {
-    display: none;
-  }
-
-  .navBarPhone {
-    display: block !important;
+  .bannerMediaLinks {
+    flex-direction: row;
+    right: auto;
+    width: 100%;
+    justify-content: space-around;
   }
 }

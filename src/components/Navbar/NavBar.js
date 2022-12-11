@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const NavBar = ({ aboutHandler }) => {
   return (
-    <div id="navBarContainer" className="navBarPhone">
+    <div id="navBarContainer">
       <ul>
         <li>
           <Link to="/">
