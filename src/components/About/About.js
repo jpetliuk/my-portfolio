@@ -123,7 +123,7 @@ const About = ({ aboutHandler }) => {
             </p>
             <h1>Let's chat</h1>
             <p className="formSubtitlte">
-              send me a message so I can know more about you.
+              Send me a message so I can know more about you.
             </p>
             <Form />
           </div>
