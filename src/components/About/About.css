@@ -241,6 +241,13 @@ input:-webkit-autofill:focus {
   .aboutInfo {
     height: 500px;
   }
+
+  .skillsList {
+    width: 100%;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
 }
 
 textarea {
