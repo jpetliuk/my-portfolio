@@ -1,6 +1,6 @@
 .contactAnimationMoving {
   animation: movingContact 9s infinite;
-  margin: auto auto auto 25px;
+  margin: auto auto auto 0;
 }
 
 .contactAnimationMoving img {

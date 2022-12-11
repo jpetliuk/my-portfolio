@@ -11,15 +11,20 @@
 .contactInformationContainer {
   margin: auto;
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  max-width: 450px;
+  grid-template-columns: 3fr 1fr;
+  max-width: 550px;
   text-align: left;
+}
+
+.contactInformation {
+  margin-left: 15px;
 }
 
 .contanctAnimation {
   display: grid;
   grid-template-columns: 1fr;
-  text-align: end;
+  text-align: start;
+  margin-right: 15px;
 }
 
 .contanctAnimation img {

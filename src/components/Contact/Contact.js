@@ -17,9 +17,7 @@ const Contact = ({ aboutHandler }) => {
         </div>
         <div className="contanctAnimation">
           <ContactImages />
-          <div className="contactProyector">
-            <img src={proyector} alt="projector" />
-          </div>
+          <img src={proyector} alt="projector" />
         </div>
       </div>
     </div>

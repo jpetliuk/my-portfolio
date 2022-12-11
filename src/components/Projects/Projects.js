@@ -16,9 +16,10 @@ const Projects = () => {
               <p>Wordpress</p>
             </div>
             <p>
-              This project conssisted in redesigning a website for a gym
-              franchaise, we did it as a Single Page Application, so that
-              people…..
+              Klap Tools are a team of professional musicians and sound
+              engineers with more than 10 years of experience providing audio
+              and music solutions for companies, labels, commercials and
+              artists.
             </p>
             <div className="projectDescriptionButton">
               <Link to={"/project/klap-tools"}>
@@ -38,9 +39,8 @@ const Projects = () => {
               <p>React</p>
             </div>
             <p>
-              This project conssisted in redesigning a website for a gym
-              franchaise, we did it as a Single Page Application, so that
-              people…..
+              Target Gym is a gym franchaise located in Buenos Aires, Argentina,
+              we redesing the website and gave it a fresh look.
             </p>
             <div className="projectDescriptionButton">
               <Link to={"/project/target-gym"}>
