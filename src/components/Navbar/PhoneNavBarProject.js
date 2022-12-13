@@ -23,7 +23,7 @@ const PhoneNavBar = ({ aboutHandler }) => {
       <div className={show === true ? "modalNavBar show" : "modalNavBar"}>
         <div className="modalNavBarContent">
           <FontAwesomeIcon
-            className="hamburger"
+            className="hamburger red"
             icon={faX}
             onClick={displayNav}
           />

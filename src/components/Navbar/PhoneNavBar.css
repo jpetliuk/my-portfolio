@@ -72,13 +72,21 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
-  color: rgb(255, 113, 91);
+  color: white;
   transition: 200ms;
 }
 
 .hamburger:hover {
-  color: white;
+  color: rgb(255, 113, 91);
   transform: scale(1.05);
+}
+
+.red {
+  color: rgb(255, 113, 91) !important;
+}
+
+.red:hover {
+  color: white !important;
 }
 
 .show {
