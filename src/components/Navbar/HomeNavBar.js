@@ -2,9 +2,13 @@ import "./NavBar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import useWindowDimensions from "./WindowDimensions";
+import PhoneNavBar from "./PhoneNavBar";
 
 const HomeNavBar = ({ aboutHandler }) => {
-  return (
+  const { width } = useWindowDimensions();
+
+  return width > 800 ? (
     <>
       <div id="navBarContainer">
         <ul>
@@ -42,6 +46,8 @@ const HomeNavBar = ({ aboutHandler }) => {
         </a>
       </div>
     </>
+  ) : (
+    <PhoneNavBar aboutHandler={aboutHandler} />
   );
 };
 

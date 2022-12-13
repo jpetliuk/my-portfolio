@@ -1,8 +1,12 @@
 import "./NavBar.css";
 import { Link } from "react-router-dom";
+import useWindowDimensions from "./WindowDimensions";
+import PhoneNavBar from "./PhoneNavBar";
 
 const NavBar = ({ aboutHandler }) => {
-  return (
+  const { width } = useWindowDimensions();
+
+  return width > 800 ? (
     <div id="navBarContainer">
       <ul>
         <li>
@@ -15,6 +19,8 @@ const NavBar = ({ aboutHandler }) => {
         </li>
       </ul>
     </div>
+  ) : (
+    <PhoneNavBar />
   );
 };
 

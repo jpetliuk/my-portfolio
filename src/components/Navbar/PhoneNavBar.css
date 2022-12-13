@@ -1,10 +1,12 @@
 .modalNavBar {
-  position: absolute;
+  position: fixed;
   height: 100vh;
-  width: 100vw;
+  width: 70%;
   background-color: blue;
-  z-index: 10;
+  z-index: 2;
+  right: -100%;
   max-width: 100%;
+  transition: 400ms;
 }
 
 .modalNavBarContent {
@@ -16,4 +18,44 @@
   height: 100vh;
   width: 100vw;
   max-width: 100%;
+}
+
+.modalNavBarContent ul li {
+  list-style: none;
+}
+
+.modalNavBarContent ul li p {
+  color: white;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: clamp(22px, 1.5vw, 30px);
+  transition: color 300ms;
+  cursor: pointer;
+  padding: 0;
+  font-size: 2rem;
+}
+
+.modalNavBarContent ul li p:hover {
+  color: rgb(255, 113, 91);
+}
+
+.hamburger {
+  z-index: 2;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: rgb(255, 113, 91);
+  transition: 200ms;
+}
+
+.hamburger:hover {
+  color: white;
+  transform: scale(1.05);
+}
+
+.show {
+  right: 0;
 }
