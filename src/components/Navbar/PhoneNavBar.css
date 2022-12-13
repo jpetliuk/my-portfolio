@@ -36,6 +36,10 @@
   max-width: 100%;
 }
 
+.modalNavBarContent ul {
+  padding: 0;
+}
+
 .modalNavBarContent ul li {
   list-style: none;
 }
