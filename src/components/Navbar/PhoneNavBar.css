@@ -2,11 +2,12 @@
   position: fixed;
   height: 100vh;
   width: 70%;
-  background-color: blue;
+  background-color: rgba(28, 29, 37, 0.985);
   z-index: 2;
   right: -100%;
   max-width: 100%;
   transition: 400ms;
+  overflow: hidden;
 }
 
 .modalNavBarContent {
