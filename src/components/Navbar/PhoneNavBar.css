@@ -61,7 +61,7 @@
 
 .modalNavBar .bannerMediaLinks {
   width: 300px;
-  bottom: 5vh;
+  margin-bottom: 5vh;
 }
 
 .hamburger {
