@@ -6,6 +6,7 @@ import Testing from "../components/testing";
 import About from "../components/About/About";
 import { useState, useEffect } from "react";
 import "./Home.css";
+
 const Home = () => {
   const [showAbout, setShowAbout] = useState(false);
 

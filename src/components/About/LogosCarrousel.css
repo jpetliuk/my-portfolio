@@ -1,0 +1,51 @@
+.carrousel {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carrouselLogos {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: scroll 40s linear infinite;
+}
+
+.carrouselLogos div {
+  margin: 10px 15px;
+}
+
+.carrouselLogos div p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.skillsIcon {
+  color: black;
+  transition: 200ms;
+  width: 30px;
+  height: 30px;
+}
+
+.skillsIcon:hover {
+  color: rgb(255, 113, 91);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(50%);
+  }
+}
+
+.carrousel:hover .carrouselLogos {
+  animation-play-state: paused;
+}

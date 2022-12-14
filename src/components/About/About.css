@@ -110,42 +110,12 @@
   }
 }
 
-.aboutInfo div {
+.aboutInfo .aboutText {
   margin: 50px;
 }
 
 .aboutForm div {
   margin: 50px;
-}
-
-.skillsList {
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 !important;
-}
-.skillsList div {
-  margin: 10px;
-}
-
-.skillsList div p {
-  margin: 0;
-  font-weight: 600;
-  font-size: 0.8rem;
-}
-
-.skillsList .skillsIcon {
-  color: black;
-  transition: 200ms;
-  width: 30px;
-  height: 30px;
-}
-
-.skillsList .skillsIcon:hover {
-  color: rgb(255, 113, 91);
 }
 
 form {
@@ -240,13 +210,6 @@ input:-webkit-autofill:focus {
 
   .aboutInfo {
     height: 500px;
-  }
-
-  .skillsList {
-    width: 100%;
-    overflow-x: scroll;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
   }
 }
 
