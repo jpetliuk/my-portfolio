@@ -10,7 +10,7 @@ const Banner = ({ aboutHandler }) => {
       <div id="bannerContainer">
         <div className="bannerContent">
           <h1>Hi I'm Jeremias | Frontend Developer</h1>
-          <p>I love learning and creating interesting stuff.</p>
+          <p>Love to learn and create interesting stuff.</p>
           <div className="bannerAbout">
             <button onClick={aboutHandler}>About Me</button>
           </div>

@@ -8,6 +8,7 @@
   position: fixed;
   z-index: 10;
   animation: backgroundAppear 1s;
+  overflow: hidden;
 }
 
 .backgroundOut {
@@ -203,6 +204,7 @@ input:-webkit-autofill:focus {
     grid-template-columns: 1fr;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
     overflow-y: scroll;
     margin: 0;
     top: 0;
